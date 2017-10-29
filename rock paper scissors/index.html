@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>RockPaperScissors</title>
+			<meta charset="UTF-8">
+			<link rel="shortcut icon" href="file:///C:/Users/Whiplash/Desktop/rock paper scissors/images/logo.png" data-reactid=".35kd9lse80.0.0">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="css/style.css">
+			<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<style>
+				.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+						    background-attachment: fixed;
+						    background-position: center;
+						    background-repeat: no-repeat;
+						    background-size: 100%;
+						}
+
+/* First image*/
+				.bgimg-1 {
+						    background-image: url("file:///F:/rock paper scissors/images/rock paper scissors.jpg");
+						    min-height: 100%;
+						}
+
+/* Second image */
+				.bgimg-2 {
+						    background-image: url("file:///F:/rock paper scissors/images/background3.jpg");
+						    min-height: 400px;
+						}
+
+/* Third image*/
+				.bgimg-3 {
+						    background-image: url("file:///F:/rock paper scissors/images/background2.png");
+						    min-height: 400px;
+						}
+
+				.bgimg-4 {
+						    background-image: url("http://cdn.wallpapersafari.com/35/52/iQ2Obt.jpeg");
+						    min-height: 400px;
+						}
+
+
+				.w3-wide {letter-spacing: 10px;}
+				.w3-hover-opacity {cursor: pointer;}
+
+/*Turn off parallax scrolling for tablets and phones */
+				@media only screen and (max-device-width: 1024px) {
+				    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+						        background-attachment: scroll;
+						        background-size: 500%;
+						    }
+						}
+			</style>
+		</head>
+		<body>
+
+			<div class="w3-top" style="color:white; background-color:#242424;">
+				<div class="w3-bar" id="myNavbar">
+				    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+					    <i class="fa fa-bars"></i>
+				    </a>
+				    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+				    <a href="#description" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> DESCRIPTION</a>
+				    <a href="#gameplay" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> GAME PLAY</a>
+				    <a href="#tricks" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> TRICKS</a>
+				    <a href="#play" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> LET'S PLAY</a>
+			    </div>
+
+  <!-- Navbar on small screens -->
+				<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium" style="color:white; background-color:#242424;">
+				    <a href="#description" class="w3-bar-item w3-button" onclick="toggleFunction()">DESCRIPTION</a>
+				    <a href="#gameplay" class="w3-bar-item w3-button" onclick="toggleFunction()">GAME PLAY</a>
+				    <a href="#tricks" class="w3-bar-item w3-button" onclick="toggleFunction()">TRICS</a>
+				    <a href="#play" class="w3-bar-item w3-button" onclick="toggleFunction()">LET'S PLAY</a>
+				</div>
+			</div>
+
+
+			<div class= "bgimg-1 container" id="home">
+				<div class="center text-big bold">
+					 <b>ROCK PAPER SCISSORS</b>
+					 <p id = "slogan">...Let's settle this like adults!</p>
+				</div>
+			</div>
+			<div class="bgimg-2" id="description">
+				<div class="center bold" style="font-size: 120%;">
+						<h2>Description</h2>
+						<p>
+						Rock, Paper, Scissors (aka "Ro-Sham-Bo", janken, "Bato, Bato, Pick" and "Scissors, Paper, Stone") is a simple hand game that is played around the world, with many different names and variations. It is commonly used as a way of coming to decisions, and in some cases is even played for sport. The rules require that competing players use one hand to form one of three shapes at an agreed-upon time. The person that plays the strongest “object” is the winner of the game. It's that easy!
+					</p>
+				</div>
+				<br  id="gameplay"/>
+				<div class="rules bold">
+					<h1/>GAME PLAY	<img src="file:///C:/Users/Whiplash/Desktop/rock paper scissors/images/rules.png" alt="Rules" class="img-medium rules">
+					<p>	The players usually count aloud to 3, or speak the name of the game (e.g. "Rock! Paper! Scissors!" or "Ro Sham Bo!"), each time either raising one hand in a fist and swinging it down on the count or holding it behind. They then "throw" by extending it towards their opponent. Variations include a version where players use only three counts before throwing their gesture (thus throwing on the count of "Scissors!" or "Bo!"), or a version where they shake their hands three times before "throwing".</p>
+				<br/><hr/>
+				</div>
+			</div>
+			<div class="bgimg-3" id="tricks">
+				<div class="center" style="background-color:white;color:black;padding:20px;">
+					<h3>Wanna know some cool tricks, Check out the video!</h3>
+				</div>
+				<div class="video">
+					<iframe width="1120" height="630" src="https://www.youtube.com/embed/AnRYS02tvRA" frameborder="1" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="bgimg-4 container">
+				<div class="center bold" id="play">
+					<h1>Let's Play</h1>
+					<h2>Are You smarter than The opponent.</h2>
+					<h3>CHOOSE ANYONE</h3>
+				</div>
+				<p style="padding:10px; background-color: transparent;"></p>
+
+				<div style="margin:0 0; padding-bottom:60px;">
+
+				<div class="w3-third" class="w3-example">
+					<a onclick="rock()">
+					  <h3>ROCK</h3>
+
+					  <div class="containerfade">
+					  <img src="./images/stone.png" alt="Rock" class="imagefade">
+						  <div class="overlayfade">
+						      <div class="textfade">ROCK</div>
+						  </div>
+					  </div>
+					</a>
+				</div>
+
+
+				<div class="w3-third" class="w3-example">
+					<a onclick="paper()" >
+					  <h3>PAPER</h3>
+
+						<div class="containerfade">
+						  <img src="./images/paper3.png" alt="Paper" class="imagefade">
+						  <div class="overlayfade">
+						      <div class="textfade">PAPER</div>
+						  </div>
+						</div>
+					</a>
+				</div>
+
+
+				<div class="w3-third" class="w3-example">
+					<a onclick="scissors()" >
+					  <h3>SCISSORS</h3>
+
+						<div class="containerfade">
+						  <img src="./images/scissors.png" alt="Avatar" class="imagefade">
+						  <div class="overlayfade">
+						      <div class="textfade">SCISSORS</div>
+						  </div>
+						</div>
+					</a>
+				</div>
+
+				</div>
+
+			</div>
+			<br/><hr/>
+
+			<script src="js/game.js"></script>
+
+		</body>
+	</html>
